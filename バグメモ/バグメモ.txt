@@ -1,0 +1,16 @@
+2017/07/28
+ログ
+at view/ paint  /  corsor_position : [7, 2]
+at panit(switch前) /カーソルのポジション(x,y) =(7,2)
+at view/ paint  /  corsor_position : [7, 2]
+at panit(switch前) /カーソルのポジション(x,y) =(7,2)
+you don't have 'sp' to use this skill !
+Exception in thread "Thread-89" java.lang.ArrayIndexOutOfBoundsException: 6
+	at main.BattleCommandView.changeSelect(BattleCommandView.java:817)
+	at main.BattlePanel.changeSelect(BattlePanel.java:175)
+	at main.BattleAI.showEnemyTrack(BattleAI.java:678)
+	at main.BattleAI.run(BattleAI.java:746)
+	at java.lang.Thread.run(Unknown Source)
+
+------------------------------------------------------------------------------
+
