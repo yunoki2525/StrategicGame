@@ -84,12 +84,12 @@ public class MainPanel extends JPanel implements Runnable {
 	public static final int  everyone = 0;
 	public static final int player1 = 1;
 	public static final int player2 = 2;
-	 boolean vsAI = true;
+	boolean vsAI = true;
 	
-	 String field_name;
+	String field_name;
 	 
-		//MapkeyManagement
-		boolean[] cleared;
+	//MapkeyManagement
+	boolean[] cleared;
 	 
 	// コンストラクタ
 	public MainPanel(AppletContext ac1, Dimension size1) {
@@ -178,7 +178,7 @@ public class MainPanel extends JPanel implements Runnable {
 					in_game = false;
 				else {
 					if (state == 0) { // TitlePanel
-						tp = new TitlePanel(ac, size, this);
+						tp = new main.TitlePanel(ac, size, this);
 						add(tp);
 						tp.requestFocusInWindow();
 					} else if (state == 1) { // GameMenuPanel
