@@ -49,19 +49,18 @@ public class CharacterStatusPanel extends JPanel implements ActionListener, Mous
 	WeaponSelectFrame wsf;
 
 	// キャラクター
-	String[] PictureFile = { "", "picture/hokkaidou.gif", "picture/aomori.gif", "picture/iwate.gif",
-			"picture/miyagi.gif",
-			"picture/akita.gif", "picture/yamagata.gif", "picture/hukusima.gif", "picture/ibaragi.gif",
-			"picture/totigi.gif", "picture/gunma.gif", "picture/saitama.gif", "picture/tiba.gif",
-			"picture/toukyou.gif", "picture/kanagawa.gif", "picture/niigata.gif", "picture/toyama.gif",
-			"picture/isikawa.gif", "picture/hukui.gif", "picture/yamanasi.gif", "picture/nagano.gif",
-			"picture/gihu.gif", "picture/sizuoka.gif", "picture/aiti.gif", "picture/mie.gif",
-			"picture/siga.gif", "picture/kyouto.gif", "picture/oosaka.gif", "picture/hyougo.gif",
-			"picture/nara.gif", "picture/wakayama.gif", "picture/tottori.gif", "picture/simane.gif",
-			"picture/okayama.gif", "picture/hirosima.gif", "picture/yamaguti.gif", "picture/tokusima.gif",
-			"picture/kagawa.gif", "picture/ehime.gif", "picture/kouti.gif", "picture/hukuoka.gif",
-			"picture/saga.gif", "picture/nagasaki.gif", "picture/kumamoto.gif", "picture/ooita.gif",
-			"picture/miyazaki.gif", "picture/kagosima.gif", "picture/okinawa.gif", "picture/zero.png",
+	String[] PictureFile = { "", "resource/picture/hokkaidou.gif", "resource/picture/aomori.gif", "resource/picture/iwate.gif","resource/picture/miyagi.gif",
+			"resource/picture/akita.gif", "resource/picture/yamagata.gif", "resource/picture/hukusima.gif", "resource/picture/ibaragi.gif",
+			"resource/picture/totigi.gif", "resource/picture/gunma.gif", "resource/picture/saitama.gif", "resource/picture/tiba.gif",
+			"resource/picture/toukyou.gif", "resource/picture/kanagawa.gif", "resource/picture/niigata.gif", "resource/picture/toyama.gif",
+			"resource/picture/isikawa.gif", "resource/picture/hukui.gif", "resource/picture/yamanasi.gif", "resource/picture/nagano.gif",
+			"resource/picture/gihu.gif", "resource/picture/sizuoka.gif", "resource/picture/aiti.gif", "resource/picture/mie.gif",
+			"resource/picture/siga.gif", "resource/picture/kyouto.gif", "resource/picture/oosaka.gif", "resource/picture/hyougo.gif",
+			"resource/picture/nara.gif", "resource/picture/wakayama.gif", "resource/picture/tottori.gif", "resource/picture/simane.gif",
+			"resource/picture/okayama.gif", "resource/picture/hirosima.gif", "resource/picture/yamaguti.gif", "resource/picture/tokusima.gif",
+			"resource/picture/kagawa.gif", "resource/picture/ehime.gif", "resource/picture/kouti.gif", "resource/picture/hukuoka.gif",
+			"resource/picture/saga.gif", "resource/picture/nagasaki.gif", "resource/picture/kumamoto.gif", "resource/picture/ooita.gif",
+			"resource/picture/miyazaki.gif", "resource/picture/kagosima.gif", "resource/picture/okinawa.gif", "resource/picture/zero.png",
 	};
 
 	Image gazou1;

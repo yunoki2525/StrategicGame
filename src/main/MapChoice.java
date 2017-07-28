@@ -30,7 +30,7 @@ public class MapChoice extends JApplet{
 		tizu = new BufferedImage(100,100,BufferedImage.TYPE_INT_ARGB);
 		
 		try{
-			tizu = ImageIO.read(new File("../src/Image/map.gif"));
+			tizu = ImageIO.read(new File("resource/Image/map.gif"));
 		}catch(Exception e){
 			e.printStackTrace();
 			tizu = null;

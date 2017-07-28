@@ -131,19 +131,19 @@ public class BattleView extends JApplet implements Runnable {
 ///////////////////////////////////////////////////////////////////////////////
 		try {
 			map_image[0] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_plain.png"));
+					"resource/Image/mapchip/Field_plain.png"));
 			map_image[1] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_sea.png"));
+					"resource/Image/mapchip/Field_sea.png"));
 			map_image[2] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_mountain.png"));
+					"resource/Image/mapchip/Field_mountain.png"));
 			map_image[3] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_wood.png"));
+					"resource/Image/mapchip/Field_wood.png"));
 			map_image[4] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_fortress.png"));
+					"resource/Image/mapchip/Field_fortress.png"));
 			map_image[5] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_road.png"));
+					"resource/Image/mapchip/Field_road.png"));
 			map_image[6] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_noentry.png"));
+					"resource/Image/mapchip/Field_noentry.png"));
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -1145,7 +1145,7 @@ public class BattleView extends JApplet implements Runnable {
 		musicStop();
 		mp.cleared[mp.storyNum] = true;
 		try{
-			PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/Stage/Cleared")));
+			PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/Stage/Cleared")));
 			for(int i= 0;i<mp.cleared.length;i++){
 				pw.print(Boolean.toString(mp.cleared[i])+",");
 			}
@@ -1200,11 +1200,11 @@ public class BattleView extends JApplet implements Runnable {
 		repaint();
 		try{
 			win = (Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-			win.open(AudioSystem.getAudioInputStream(new File("../bin/Sound/効果音/win.wav")));
+			win.open(AudioSystem.getAudioInputStream(new File("resource/Sound/効果音/win.wav")));
 			FloatControl control1 = (FloatControl)win.getControl(FloatControl.Type.MASTER_GAIN);
 			controlByLinearScalar(control1, 1);
 			lose = (Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-			lose.open(AudioSystem.getAudioInputStream(new File("../bin/Sound/効果音/lose.wav")));
+			lose.open(AudioSystem.getAudioInputStream(new File("resource/Sound/効果音/lose.wav")));
 			FloatControl control2 = (FloatControl)lose.getControl(FloatControl.Type.MASTER_GAIN);
 			controlByLinearScalar(control2, 1);
 		}

@@ -84,9 +84,9 @@ public class WeaponSelectFrame extends JApplet implements ActionListener {
 
 		try{
 			ok=(Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-			ok.open(AudioSystem.getAudioInputStream(new File("music/okok.wav")));
+			ok.open(AudioSystem.getAudioInputStream(new File("resource/music/okok.wav")));
 			no=(Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-			no.open(AudioSystem.getAudioInputStream(new File("music/nono.wav")));
+			no.open(AudioSystem.getAudioInputStream(new File("resource/music/nono.wav")));
 		}catch(IOException er){
 
 		}
@@ -167,7 +167,7 @@ public class WeaponSelectFrame extends JApplet implements ActionListener {
 				try {
 //					System.out.println("CSPnum = "+CSPnum);
 //					System.out.println("weapon.id = "+weapon.id);
-					buki = ImageIO.read(new File("weapon/buki"+weapon.id+".jpg"));
+					buki = ImageIO.read(new File("resource/weapon/buki"+weapon.id+".jpg"));
 				} catch (IOException er) {
 					throw new RuntimeException(er);
 				}
@@ -309,8 +309,8 @@ public class WeaponSelectFrame extends JApplet implements ActionListener {
 					System.out.println("決定");
 					try {
 						//MyData2→	MyData書き込み
-						BufferedReader br = new BufferedReader(new FileReader("../src/Stage/MyData2"));
-						PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/Stage/MyData")));
+						BufferedReader br = new BufferedReader(new FileReader("resource/Stage/MyData2"));
+						PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/Stage/MyData")));
 						pw.println(br.readLine());
 						for (int i = 0; i < unit_num; i++) {
 							pw.println(br.readLine());
@@ -355,7 +355,7 @@ public class WeaponSelectFrame extends JApplet implements ActionListener {
 
 		try{
 			//みんなで使っている装備の数を知る
-			BufferedReader br4 = new BufferedReader(new FileReader("../src/Stage/MyData"));
+			BufferedReader br4 = new BufferedReader(new FileReader("resource/Stage/MyData"));
 			String str4 = br4.readLine();
 			unit_num = Integer.parseInt(str4);
 
@@ -369,7 +369,7 @@ public class WeaponSelectFrame extends JApplet implements ActionListener {
 			}
 			br4.close();
 
-			BufferedReader br = new BufferedReader(new FileReader("../src/Stage/MyData"));
+			BufferedReader br = new BufferedReader(new FileReader("resource/Stage/MyData"));
 			String str = br.readLine();
 			unit_num = Integer.parseInt(str);
 			//	all_weapon_name = new String[unit_num];
@@ -388,8 +388,8 @@ public class WeaponSelectFrame extends JApplet implements ActionListener {
 			br.close();
 
 			//MyData→MyData2書き込み
-			BufferedReader br2 = new BufferedReader(new FileReader("../src/Stage/MyData"));
-			PrintWriter pw2 = new PrintWriter(new BufferedWriter(new FileWriter("../src/Stage/MyData2")));
+			BufferedReader br2 = new BufferedReader(new FileReader("resource/Stage/MyData"));
+			PrintWriter pw2 = new PrintWriter(new BufferedWriter(new FileWriter("resource/Stage/MyData2")));
 			while(true){
 				str = br2.readLine();
 				if(str == null) break;
@@ -402,7 +402,7 @@ public class WeaponSelectFrame extends JApplet implements ActionListener {
 			having_weapon = new int[Weapon.kind+1];
 			having_weapon[0] = 100;
 
-			BufferedReader br3 = new BufferedReader(new FileReader("../src/Weapon/OwnWeapon"));
+			BufferedReader br3 = new BufferedReader(new FileReader("resource/Weapon/OwnWeapon"));
 			String itemstr = br3.readLine();
 			if(itemstr != null){
 				String[] tokens1 = itemstr.split(",");

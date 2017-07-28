@@ -48,13 +48,13 @@ public class Player1ShoppingMyMoney extends JPanel{
 		setSize(600,100);
 
 		try{
-			back = ImageIO.read(new File("picture/shoppingMyMoney1.jpg"));
-			back2 = ImageIO.read(new File("picture/shoppingMyMoney2.jpg"));
+			back = ImageIO.read(new File("resource/picture/shoppingMyMoney1.jpg"));
+			back2 = ImageIO.read(new File("resource/picture/shoppingMyMoney2.jpg"));
 			kane = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			kane.open(AudioSystem.getAudioInputStream(new File("music/kane.wav")));
+			kane.open(AudioSystem.getAudioInputStream(new File("resource/music/kane.wav")));
 			dame = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			dame.open(AudioSystem.getAudioInputStream(new File("music/dame.wav")));
-			BufferedReader br = new BufferedReader(new FileReader("../src/Money/Player1Money"));
+			dame.open(AudioSystem.getAudioInputStream(new File("resource/music/dame.wav")));
+			BufferedReader br = new BufferedReader(new FileReader("resource/Money/Player1Money"));
 			myMoney = Integer.parseInt(br.readLine());
 			br.close();
 		}

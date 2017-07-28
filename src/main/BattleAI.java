@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BattleAI implements Runnable {
 
 	BattlePanel panel;
-
+	
 	float[][] environment ;
 	int[][] threat;
 	int[][] threat_;

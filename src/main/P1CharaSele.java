@@ -67,7 +67,7 @@ public class P1CharaSele extends JPanel implements MouseListener, ActionListener
 			MagicList magic_list;
 			WeaponList weapon_list;
 
-			BufferedReader br = new BufferedReader(new FileReader("../src/PvP/UnitData"));
+			BufferedReader br = new BufferedReader(new FileReader("resource/PvP/UnitData"));
 			for(int i=0 ; i<unit.length ;i++){
 				String str = br.readLine();  //から打ち
 				str = br.readLine();         //地域ごとのユニット数
@@ -117,7 +117,7 @@ public class P1CharaSele extends JPanel implements MouseListener, ActionListener
 			}
 			br.close();
 
-			br = new BufferedReader(new FileReader("../src/Field/"+field_name));
+			br = new BufferedReader(new FileReader("resource/Field/"+field_name));
 			sortie = Integer.parseInt(br.readLine());
 			idx = new int[sortie][2];
 			br.close();
@@ -243,7 +243,7 @@ public class P1CharaSele extends JPanel implements MouseListener, ActionListener
 				Unit[] myUnit = new Unit[sortie];
 				PrintWriter pw;
 				try {
-					pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/PvP/P1unit")));
+					pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/PvP/P1unit")));
 					pw.println(sortie);
 					for(int i=0 ; i<myUnit.length ; i++){
 						myUnit[i] = unit[idx[i][0]][idx[i][1]];

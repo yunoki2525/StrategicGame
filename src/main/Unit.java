@@ -46,9 +46,9 @@ public class Unit {
 	Unit(String image_name, String icon_name,String name, int id, int HP,int ATK, int DEF,int SP, int INT,int MEN, int AGI, int DEX, int LUCK, int MOVE,
 			int[] PASS ,Skill[] skill,Magic[] magic,Weapon weapon){
 		try {
-			original_image = ImageIO.read(new File("../bin/Image/都道府県擬人化/"+image_name+".gif"));
-			face_image = ImageIO.read(new File("../bin/Image/都道府県擬人化/"+image_name+"2.gif"));
-			icon = ImageIO.read(new File("../bin/Image/charachip/"+icon_name+".png"));
+			original_image = ImageIO.read(new File("resource/Image/都道府県擬人化/"+image_name+".gif"));
+			face_image = ImageIO.read(new File("resource/Image/都道府県擬人化/"+image_name+"2.gif"));
+			icon = ImageIO.read(new File("resource/Image/charachip/"+icon_name+".png"));
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}

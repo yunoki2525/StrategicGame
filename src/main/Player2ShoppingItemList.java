@@ -29,7 +29,7 @@ public class Player2ShoppingItemList extends JPanel implements ActionListener{
 		this.sMain = sMain;
 
 		try{
-			backGraund = ImageIO.read(new File("picture/shoppingBackGraund.jpeg"));
+			backGraund = ImageIO.read(new File("resource/picture/shoppingBackGraund.jpeg"));
 		}
 		catch(IOException er){
 			throw new RuntimeException(er);

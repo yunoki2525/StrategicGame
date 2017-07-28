@@ -60,7 +60,7 @@ public class Player1StatePanel extends JApplet implements ActionListener{
 
 		try{
 			/////// ここから味方情報////////////
-			BufferedReader br = new BufferedReader(new FileReader("../src/PvP/P1unit"));
+			BufferedReader br = new BufferedReader(new FileReader("resource/PvP/P1unit"));
 			String str = br.readLine();
 		//	System.out.println(str);
 			int n0 = Integer.parseInt(str);

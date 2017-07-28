@@ -36,8 +36,8 @@ public class Player2ShoppingPay extends JPanel implements ActionListener{
 		this.mp = mp;
 
 		try{
-			backGraund = ImageIO.read(new File("picture/ShoppingPay.jpg"));
-			waku = ImageIO.read(new File("picture/waku002.png"));
+			backGraund = ImageIO.read(new File("resource/picture/ShoppingPay.jpg"));
+			waku = ImageIO.read(new File("resource/picture/waku002.png"));
 		}
 		catch(IOException er){
 			throw new RuntimeException(er);
@@ -107,7 +107,7 @@ public class Player2ShoppingPay extends JPanel implements ActionListener{
 				}
 				try{
 					if(str != null){
-					PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/Weapon/Player2Weapon")));
+					PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/Weapon/Player2Weapon")));
 					pw.println(str);
 					pw.close();
 					}
@@ -115,7 +115,7 @@ public class Player2ShoppingPay extends JPanel implements ActionListener{
 				}
 				////////////////////////////money記録////////////////////////////////////////////////////////
 				try{
-					PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/Money/Player2Money")));
+					PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/Money/Player2Money")));
 					pw.println(sMain.up.myMoney);
 					pw.close();
 				}catch (IOException er) {

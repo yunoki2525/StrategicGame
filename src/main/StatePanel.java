@@ -66,7 +66,7 @@ public class StatePanel extends JApplet implements ActionListener {
 
 		//画像取り込み
 		try{
-			backImage = ImageIO.read(new File("Image/teitoku.png"));
+			backImage = ImageIO.read(new File("resource/Image/teitoku.png"));
 		}catch(IOException e){
 			throw new RuntimeException(e);
 		}
@@ -75,7 +75,7 @@ public class StatePanel extends JApplet implements ActionListener {
 			/////// ここから味方情報////////////
 //			SkillList skill_list;
 //			WeaponList weapon_list;
-//			BufferedReader br = new BufferedReader(new FileReader("../src/Stage/friend_test"));
+//			BufferedReader br = new BufferedReader(new FileReader("resource/Stage/friend_test"));
 //			String str1 = br.readLine();
 //		//	System.out.println(n0);
 //			my_unit = new Unit[Integer.parseInt(str1)];
@@ -97,7 +97,7 @@ public class StatePanel extends JApplet implements ActionListener {
 //
 //				my_unit[i]=new Unit(tokens1[0],status[0],status[1],status[2],status[3],status[4],
 //						status[5],status[6],status[7],status[8],status[9],status[10],skill,weapon);
-			BufferedReader br = new BufferedReader(new FileReader("../src/Stage/MyData"));
+			BufferedReader br = new BufferedReader(new FileReader("resource/Stage/MyData"));
 			String str = br.readLine();
 		//	System.out.println(str);
 			int n0 = Integer.parseInt(str);

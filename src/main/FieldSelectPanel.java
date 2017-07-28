@@ -57,28 +57,28 @@ public class FieldSelectPanel  extends JApplet  implements ActionListener{
 
 		try {
 			map_image[0] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_plain.png"));
+					"resource/Image/mapchip/Field_plain.png"));
 			map_image[1] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_sea.png"));
+					"resource/Image/mapchip/Field_sea.png"));
 			map_image[2] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_mountain.png"));
+					"resource/Image/mapchip/Field_mountain.png"));
 			map_image[3] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_wood.png"));
+					"resource/Image/mapchip/Field_wood.png"));
 			map_image[4] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_fortress.png"));
+					"resource/Image/mapchip/Field_fortress.png"));
 			map_image[5] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_road.png"));
+					"resource/Image/mapchip/Field_road.png"));
 			map_image[6] = ImageIO.read(new File(
-					"../bin/Image/mapchip/Field_noentry.png"));
+					"resource/Image/mapchip/Field_noentry.png"));
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
 
 
 
-		right = new JButton(new ImageIcon("../bin/ButtonImage/arrow/arrow_right.png"));
-		left = new JButton(new ImageIcon("../bin/ButtonImage/arrow/arrow_left.png"));
-		back = new JButton(new ImageIcon("../bin/ButtonImage/cross_mark/back.png"));
+		right = new JButton(new ImageIcon("resource/ButtonImage/arrow/arrow_right.png"));
+		left = new JButton(new ImageIcon("resource/ButtonImage/arrow/arrow_left.png"));
+		back = new JButton(new ImageIcon("resource/ButtonImage/cross_mark/back.png"));
 
 		right.setBackground(new Color(150,150,255));
 		left.setBackground(new Color(150,150,255));

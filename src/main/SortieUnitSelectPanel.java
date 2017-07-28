@@ -91,7 +91,7 @@ public class SortieUnitSelectPanel extends JApplet implements KeyListener, Actio
 		try{
 
 			/////// ここから味方情報////////////
-			BufferedReader br = new BufferedReader(new FileReader("../src/Stage/MyData"));
+			BufferedReader br = new BufferedReader(new FileReader("resource/Stage/MyData"));
 			String str = br.readLine();
 		//	System.out.println(str);
 			int n0 = Integer.parseInt(str);
@@ -140,7 +140,7 @@ public class SortieUnitSelectPanel extends JApplet implements KeyListener, Actio
 
 
 			/////// ここから敵・Stage情報////////////
-			br = new BufferedReader(new FileReader("../src/Stage/"+stage[storyNum]));
+			br = new BufferedReader(new FileReader("resource/Stage/"+stage[storyNum]));
 			str = br.readLine();
 			friend = new Piece[Integer.parseInt(str)];
 			sortie_num = Integer.parseInt(str);
@@ -149,7 +149,7 @@ public class SortieUnitSelectPanel extends JApplet implements KeyListener, Actio
 			str = br.readLine();
 			try {
 				mapMusic = (Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-				mapMusic.open(AudioSystem.getAudioInputStream(new File("../bin/music/mapMusic/"+str+".wav")));
+				mapMusic.open(AudioSystem.getAudioInputStream(new File("resource/music/mapMusic/"+str+".wav")));
 			} catch (LineUnavailableException | UnsupportedAudioFileException e) {
 				// TODO 自動生成された catch ブロック
 				e.printStackTrace();

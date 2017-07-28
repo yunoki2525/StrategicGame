@@ -37,7 +37,7 @@ public class TitlePanel extends JApplet implements ActionListener, KeyListener {
 	int width, height;
 
 	boolean[] cleared;
-
+	
 	// コンストラクタ
 	public TitlePanel(AppletContext ac1, Dimension size1, MainPanel mp1) {
 		Container pane = getContentPane();

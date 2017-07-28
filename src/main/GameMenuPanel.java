@@ -44,16 +44,16 @@ public class GameMenuPanel extends JApplet implements ActionListener{
 		pane.setLayout(null);
 
 		try{
-			button1 = ImageIO.read(new File("ButtonImage/button1.png"));
+			button1 = ImageIO.read(new File("resource/ButtonImage/button1.png"));
 
-			backIcon = ImageIO.read(new File("Image/teitoku.png"));
+			backIcon = ImageIO.read(new File("resource/Image/teitoku.png"));
 
-			battleIcon = ImageIO.read(new File("ButtonImage/出撃アイコン3.png"));
-			statusIcon = ImageIO.read(new File("ButtonImage/ステータスアイコン1.png"));
-			shopIcon = ImageIO.read(new File("ButtonImage/ショップアイコン1.png"));
-			PvPIcon = ImageIO.read(new File("ButtonImage/taisenbuttonIconRed.png"));
+			battleIcon = ImageIO.read(new File("resource/ButtonImage/出撃アイコン3.png"));
+			statusIcon = ImageIO.read(new File("resource/ButtonImage/ステータスアイコン1.png"));
+			shopIcon = ImageIO.read(new File("resource/ButtonImage/ショップアイコン1.png"));
+			PvPIcon = ImageIO.read(new File("resource/ButtonImage/taisenbuttonIconRed.png"));
 
-			gostButtonIcon = new ImageIcon("ButtonImage/透明.png");
+			gostButtonIcon = new ImageIcon("resource/ButtonImage/透明.png");
 
 		}catch(IOException e){
 			throw new RuntimeException(e);

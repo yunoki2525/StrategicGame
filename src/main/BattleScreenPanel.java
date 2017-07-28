@@ -708,33 +708,33 @@ public class BattleScreenPanel extends JApplet implements ActionListener, Runnab
 
 	Container pane;
 
-	String[] PictureFile = { "", "picture/hokkaidou.gif", "picture/aomori.gif", "picture/iwate.gif",
-			"picture/miyagi.gif",
-			"picture/akita.gif", "picture/yamagata.gif", "picture/hukusima.gif", "picture/ibaragi.gif",
-			"picture/totigi.gif", "picture/gunma.gif", "picture/saitama.gif", "picture/tiba.gif",
-			"picture/toukyou.gif", "picture/kanagawa.gif", "picture/niigata.gif", "picture/toyama.gif",
-			"picture/isikawa.gif", "picture/hukui.gif", "picture/yamanasi.gif", "picture/nagano.gif",
-			"picture/gihu.gif", "picture/sizuoka.gif", "picture/aiti.gif", "picture/mie.gif",
-			"picture/siga.gif", "picture/kyouto.gif", "picture/oosaka.gif", "picture/hyougo.gif",
-			"picture/nara.gif", "picture/wakayama.gif", "picture/tottori.gif", "picture/simane.gif",
-			"picture/okayama.gif", "picture/hirosima.gif", "picture/yamaguti.gif", "picture/tokusima.gif",
-			"picture/kagawa.gif", "picture/ehime.gif", "picture/kouti.gif", "picture/hukuoka.gif",
-			"picture/saga.gif", "picture/nagasaki.gif", "picture/kumamoto.gif", "picture/ooita.gif",
-			"picture/miyazaki.gif", "picture/kagosima.gif", "picture/okinawa.gif", "picture/zero.png",
+	String[] PictureFile = { "", "resource/picture/hokkaidou.gif", "resource/picture/aomori.gif", "resource/picture/iwate.gif",
+			"resource/picture/miyagi.gif",
+			"resource/picture/akita.gif", "resource/picture/yamagata.gif", "resource/picture/hukusima.gif", "resource/picture/ibaragi.gif",
+			"resource/picture/totigi.gif", "resource/picture/gunma.gif", "resource/picture/saitama.gif", "resource/picture/tiba.gif",
+			"resource/picture/toukyou.gif", "resource/picture/kanagawa.gif", "resource/picture/niigata.gif", "resource/picture/toyama.gif",
+			"resource/picture/isikawa.gif", "resource/picture/hukui.gif", "resource/picture/yamanasi.gif", "resource/picture/nagano.gif",
+			"resource/picture/gihu.gif", "resource/picture/sizuoka.gif", "resource/picture/aiti.gif", "resource/picture/mie.gif",
+			"resource/picture/siga.gif", "resource/picture/kyouto.gif", "resource/picture/oosaka.gif", "resource/picture/hyougo.gif",
+			"resource/picture/nara.gif", "resource/picture/wakayama.gif", "resource/picture/tottori.gif", "resource/picture/simane.gif",
+			"resource/picture/okayama.gif", "resource/picture/hirosima.gif", "resource/picture/yamaguti.gif", "resource/picture/tokusima.gif",
+			"resource/picture/kagawa.gif", "resource/picture/ehime.gif", "resource/picture/kouti.gif", "resource/picture/hukuoka.gif",
+			"resource/picture/saga.gif", "resource/picture/nagasaki.gif", "resource/picture/kumamoto.gif", "resource/picture/ooita.gif",
+			"resource/picture/miyazaki.gif", "resource/picture/kagosima.gif", "resource/picture/okinawa.gif", "resource/picture/zero.png",
 	};
-	String[] FacePictureFile = { "", "picture/hokkaidou2.gif", "picture/aomori2.gif", "picture/iwate2.gif",
-			"picture/miyagi2.gif",
-			"picture/akita2.gif", "picture/yamagata2.gif", "picture/hukusima2.gif", "picture/ibaragi2.gif",
-			"picture/totigi2.gif", "picture/gunma2.gif", "picture/saitama2.gif", "picture/tiba2.gif",
-			"picture/toukyou2.gif", "picture/kanagawa2.gif", "picture/niigata2.gif", "picture/toyama2.gif",
-			"picture/isikawa2.gif", "picture/hukui2.gif", "picture/yamanasi2.gif", "picture/nagano2.gif",
-			"picture/gihu2.gif", "picture/sizuoka2.gif", "picture/aiti2.gif", "picture/mie2.gif",
-			"picture/siga2.gif", "picture/kyouto2.gif", "picture/oosaka2.gif", "picture/hyougo2.gif",
-			"picture/nara2.gif", "picture/wakayama2.gif", "picture/tottori2.gif", "picture/simane2.gif",
-			"picture/okayama2.gif", "picture/hirosima2.gif", "picture/yamaguti2.gif", "picture/tokusima2.gif",
-			"picture/kagawa2.gif", "picture/ehime2.gif", "picture/kouti2.gif", "picture/hukuoka2.gif",
-			"picture/saga2.gif", "picture/nagasaki2.gif", "picture/kumamoto2.gif", "picture/ooita2.gif",
-			"picture/miyazaki2.gif", "picture/kagosima2.gif", "picture/okinawa2.gif", "picture/zero.png",
+	String[] FacePictureFile = { "", "resource/picture/hokkaidou2.gif", "resource/picture/aomori2.gif", "resource/picture/iwate2.gif",
+			"resource/picture/miyagi2.gif",
+			"resource/picture/akita2.gif", "resource/picture/yamagata2.gif", "resource/picture/hukusima2.gif", "resource/picture/ibaragi2.gif",
+			"resource/picture/totigi2.gif", "resource/picture/gunma2.gif", "resource/picture/saitama2.gif", "resource/picture/tiba2.gif",
+			"resource/picture/toukyou2.gif", "resource/picture/kanagawa2.gif", "resource/picture/niigata2.gif", "resource/picture/toyama2.gif",
+			"resource/picture/isikawa2.gif", "resource/picture/hukui2.gif", "resource/picture/yamanasi2.gif", "resource/picture/nagano2.gif",
+			"resource/picture/gihu2.gif", "resource/picture/sizuoka2.gif", "resource/picture/aiti2.gif", "resource/picture/mie2.gif",
+			"resource/picture/siga2.gif", "resource/picture/kyouto2.gif", "resource/picture/oosaka2.gif", "resource/picture/hyougo2.gif",
+			"resource/picture/nara2.gif", "resource/picture/wakayama2.gif", "resource/picture/tottori2.gif", "resource/picture/simane2.gif",
+			"resource/picture/okayama2.gif", "resource/picture/hirosima2.gif", "resource/picture/yamaguti2.gif", "resource/picture/tokusima2.gif",
+			"resource/picture/kagawa2.gif", "resource/picture/ehime2.gif", "resource/picture/kouti2.gif", "resource/picture/hukuoka2.gif",
+			"resource/picture/saga2.gif", "resource/picture/nagasaki2.gif", "resource/picture/kumamoto2.gif", "resource/picture/ooita2.gif",
+			"resource/picture/miyazaki2.gif", "resource/picture/kagosima2.gif", "resource/picture/okinawa2.gif", "resource/picture/zero.png",
 	};
 	String[] TalkingMan = { "", "北海道", "青森", "岩手", "宮城", "秋田", "山形", "福島", "茨城", "栃木", "群馬", "埼玉", "千葉", "東京",
 			"神奈川", "新潟", "富山", "石川", "福井", "山梨", "長野", "岐阜", "静岡", "愛知", "三重", "滋賀", "京都",
@@ -1402,665 +1402,665 @@ public class BattleScreenPanel extends JApplet implements ActionListener, Runnab
 			RightManComment = CommentFile[RightManNum];
 			LeftManComment = CommentFile[LeftManNum];
 
-			BackGraund = ImageIO.read(new File("picture/BackGraund" + backGraundNum + ".jpg"));/////////////＃背景
+			BackGraund = ImageIO.read(new File("resource/picture/BackGraund" + backGraundNum + ".jpg"));/////////////＃背景
 			BackMusic = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			BackMusic.open(AudioSystem.getAudioInputStream(new File("music/Battle" + backMusicNum + ".wav")));///////////////////////////＃音楽
+			BackMusic.open(AudioSystem.getAudioInputStream(new File("resource/music/Battle" + backMusicNum + ".wav")));///////////////////////////＃音楽
 
-			Waku1 = ImageIO.read(new File("picture/waku001.png"));
-			batu = ImageIO.read(new File("picture/batu.png"));
-			ManAttack = ImageIO.read(new File("picture/yazirusi.png"));
+			Waku1 = ImageIO.read(new File("resource/picture/waku001.png"));
+			batu = ImageIO.read(new File("resource/picture/batu.png"));
+			ManAttack = ImageIO.read(new File("resource/picture/yazirusi.png"));
 
-			skil999 = ImageIO.read(new File("picture/kirimasuyo.png"));
+			skil999 = ImageIO.read(new File("resource/picture/kirimasuyo.png"));
 			skil9991 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			skil9991.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+			skil9991.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 
-			skil77 = ImageIO.read(new File("picture/drain.png"));
+			skil77 = ImageIO.read(new File("resource/picture/drain.png"));
 			skil771 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			skil771.open(AudioSystem.getAudioInputStream(new File("music/drainoto.wav")));
+			skil771.open(AudioSystem.getAudioInputStream(new File("resource/music/drainoto.wav")));
 
 			hpDownS = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			hpDownS.open(AudioSystem.getAudioInputStream(new File("music/kuri.wav")));
+			hpDownS.open(AudioSystem.getAudioInputStream(new File("resource/music/kuri.wav")));
 
 			Death = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			Death.open(AudioSystem.getAudioInputStream(new File("music/death.wav")));
+			Death.open(AudioSystem.getAudioInputStream(new File("resource/music/death.wav")));
 
 			Miss = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			Miss.open(AudioSystem.getAudioInputStream(new File("music/miss.wav")));
+			Miss.open(AudioSystem.getAudioInputStream(new File("resource/music/miss.wav")));
 
 			/////////////////////////condition
 			for(int i=0;i<7;i++){
-				condition[i] = ImageIO.read(new File("picture/condition" + i + ".png"));
+				condition[i] = ImageIO.read(new File("resource/picture/condition" + i + ".png"));
 			}
-			buff = ImageIO.read(new File("picture/buff.png"));
-			deBuff = ImageIO.read(new File("picture/deBuff.png"));
+			buff = ImageIO.read(new File("resource/picture/buff.png"));
+			deBuff = ImageIO.read(new File("resource/picture/deBuff.png"));
 			//////////////////////////
 
 			if (skilNumber == 1) {
-				skil01 = ImageIO.read(new File("picture/sword.png"));
+				skil01 = ImageIO.read(new File("resource/picture/sword.png"));
 				skil011 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil011.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil011.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil012 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil012.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil012.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil013 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil013.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil013.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil014 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil014.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil014.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil015 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil015.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil015.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				magical01 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				magical01.open(AudioSystem.getAudioInputStream(new File("music/magical01.wav")));
+				magical01.open(AudioSystem.getAudioInputStream(new File("resource/music/magical01.wav")));
 
 			}
 
 			else if (skilNumber == 2) {
-				skil02 = ImageIO.read(new File("picture/PLight.png"));
+				skil02 = ImageIO.read(new File("resource/picture/PLight.png"));
 				skil021 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil021.open(AudioSystem.getAudioInputStream(new File("music/PLight.wav")));
+				skil021.open(AudioSystem.getAudioInputStream(new File("resource/music/PLight.wav")));
 
 			}
 			else if (skilNumber == 3) {
-				skil03 = ImageIO.read(new File("picture/bim.png"));
+				skil03 = ImageIO.read(new File("resource/picture/bim.png"));
 				skil031 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil031.open(AudioSystem.getAudioInputStream(new File("music/explosion01.wav")));
+				skil031.open(AudioSystem.getAudioInputStream(new File("resource/music/explosion01.wav")));
 				skil032 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil032.open(AudioSystem.getAudioInputStream(new File("music/gun01.wav")));
+				skil032.open(AudioSystem.getAudioInputStream(new File("resource/music/gun01.wav")));
 
 			}
 			else if (skilNumber == 4) {
-				skil04 = ImageIO.read(new File("picture/tornado.png"));
+				skil04 = ImageIO.read(new File("resource/picture/tornado.png"));
 				skil041 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil041.open(AudioSystem.getAudioInputStream(new File("music/wind.wav")));
+				skil041.open(AudioSystem.getAudioInputStream(new File("resource/music/wind.wav")));
 
 			}
 			else if (skilNumber == 5) {
-				skil05 = ImageIO.read(new File("picture/slash.png"));
+				skil05 = ImageIO.read(new File("resource/picture/slash.png"));
 				skil051 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil051.open(AudioSystem.getAudioInputStream(new File("music/sword_f.wav")));
+				skil051.open(AudioSystem.getAudioInputStream(new File("resource/music/sword_f.wav")));
 
 			}
 			else if (skilNumber == 6) {
-				skil06 = ImageIO.read(new File("picture/mochi.png"));
+				skil06 = ImageIO.read(new File("resource/picture/mochi.png"));
 				skil061 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil061.open(AudioSystem.getAudioInputStream(new File("music/fallmochi.wav")));
+				skil061.open(AudioSystem.getAudioInputStream(new File("resource/music/fallmochi.wav")));
 				skil062 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil062.open(AudioSystem.getAudioInputStream(new File("music/fallmochi1.wav")));
+				skil062.open(AudioSystem.getAudioInputStream(new File("resource/music/fallmochi1.wav")));
 
 			}
 
 			else if (skilNumber == 7) {
-				skil07 = ImageIO.read(new File("picture/manyhands.png"));
+				skil07 = ImageIO.read(new File("resource/picture/manyhands.png"));
 				skil071 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil071.open(AudioSystem.getAudioInputStream(new File("music/monstergrowl.wav")));
+				skil071.open(AudioSystem.getAudioInputStream(new File("resource/music/monstergrowl.wav")));
 
 			}
 			else if (skilNumber == 8) {
-				skil08 = ImageIO.read(new File("picture/curtain.png"));
+				skil08 = ImageIO.read(new File("resource/picture/curtain.png"));
 				skil081 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil081.open(AudioSystem.getAudioInputStream(new File("music/curtainopen.wav")));
+				skil081.open(AudioSystem.getAudioInputStream(new File("resource/music/curtainopen.wav")));
 				skil082 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil082.open(AudioSystem.getAudioInputStream(new File("music/chanchan.wav")));
+				skil082.open(AudioSystem.getAudioInputStream(new File("resource/music/chanchan.wav")));
 
 			}
 			else if (skilNumber == 9) {
-				skil09 = ImageIO.read(new File("picture/kamifubuki.png"));
+				skil09 = ImageIO.read(new File("resource/picture/kamifubuki.png"));
 				skil091 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil091.open(AudioSystem.getAudioInputStream(new File("music/clappinghands.wav")));
+				skil091.open(AudioSystem.getAudioInputStream(new File("resource/music/clappinghands.wav")));
 
 			}
 
 			else if (skilNumber == 10) {
-				skil10 = ImageIO.read(new File("picture/wareta.png"));
+				skil10 = ImageIO.read(new File("resource/picture/wareta.png"));
 				skil101 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil101.open(AudioSystem.getAudioInputStream(new File("music/gun02.wav")));
+				skil101.open(AudioSystem.getAudioInputStream(new File("resource/music/gun02.wav")));
 
 			}
 
 			else if (skilNumber == 11) {
-				skil11 = ImageIO.read(new File("picture/ryushi.png"));
+				skil11 = ImageIO.read(new File("resource/picture/ryushi.png"));
 				skil111 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil111.open(AudioSystem.getAudioInputStream(new File("music/water.wav")));
+				skil111.open(AudioSystem.getAudioInputStream(new File("resource/music/water.wav")));
 
 			}
 
 			else if (skilNumber == 12) {
-				skil12 = ImageIO.read(new File("picture/nawa.png"));
+				skil12 = ImageIO.read(new File("resource/picture/nawa.png"));
 				skil121 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil121.open(AudioSystem.getAudioInputStream(new File("music/nawaoto.wav")));
+				skil121.open(AudioSystem.getAudioInputStream(new File("resource/music/nawaoto.wav")));
 
 			}
 
 			else if (skilNumber == 13) {
-				skil13 = ImageIO.read(new File("picture/kusa.png"));
+				skil13 = ImageIO.read(new File("resource/picture/kusa.png"));
 				skil131 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil131.open(AudioSystem.getAudioInputStream(new File("music/kusahaeru.wav")));
+				skil131.open(AudioSystem.getAudioInputStream(new File("resource/music/kusahaeru.wav")));
 
 			}
 
 			else if (skilNumber == 14) {
-				skil14 = ImageIO.read(new File("picture/money.png"));
+				skil14 = ImageIO.read(new File("resource/picture/money.png"));
 				skil141 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil141.open(AudioSystem.getAudioInputStream(new File("music/money1.wav")));
+				skil141.open(AudioSystem.getAudioInputStream(new File("resource/music/money1.wav")));
 
 			}
 
 			else if (skilNumber == 15) {
-				skil15 = ImageIO.read(new File("picture/kirayuki.png"));
+				skil15 = ImageIO.read(new File("resource/picture/kirayuki.png"));
 				skil151 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil151.open(AudioSystem.getAudioInputStream(new File("music/ice.wav")));
+				skil151.open(AudioSystem.getAudioInputStream(new File("resource/music/ice.wav")));
 
 			}
 
 			else if (skilNumber == 16) {
-				skil16 = ImageIO.read(new File("picture/kamu.png"));
+				skil16 = ImageIO.read(new File("resource/picture/kamu.png"));
 				skil161 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil161.open(AudioSystem.getAudioInputStream(new File("music/gabu.wav")));
+				skil161.open(AudioSystem.getAudioInputStream(new File("resource/music/gabu.wav")));
 				skil162 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil162.open(AudioSystem.getAudioInputStream(new File("music/gabu.wav")));
+				skil162.open(AudioSystem.getAudioInputStream(new File("resource/music/gabu.wav")));
 
 			}
 
 			else if (skilNumber == 17) {
-				skil17 = ImageIO.read(new File("picture/hikkaku.png"));
+				skil17 = ImageIO.read(new File("resource/picture/hikkaku.png"));
 				skil171 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil171.open(AudioSystem.getAudioInputStream(new File("music/hikkakuyo.wav")));
+				skil171.open(AudioSystem.getAudioInputStream(new File("resource/music/hikkakuyo.wav")));
 				skil172 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil172.open(AudioSystem.getAudioInputStream(new File("music/hikkakuyo.wav")));
+				skil172.open(AudioSystem.getAudioInputStream(new File("resource/music/hikkakuyo.wav")));
 
 			}
 
 			else if (skilNumber == 18) {
-				skil18 = ImageIO.read(new File("picture/sippo.png"));
+				skil18 = ImageIO.read(new File("resource/picture/sippo.png"));
 				skil181 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil181.open(AudioSystem.getAudioInputStream(new File("music/binta.wav")));
+				skil181.open(AudioSystem.getAudioInputStream(new File("resource/music/binta.wav")));
 				skil182 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil182.open(AudioSystem.getAudioInputStream(new File("music/binta.wav")));
+				skil182.open(AudioSystem.getAudioInputStream(new File("resource/music/binta.wav")));
 
 			}
 
 			else if (skilNumber == 19) {
-				skil19 = ImageIO.read(new File("picture/banban.png"));
+				skil19 = ImageIO.read(new File("resource/picture/banban.png"));
 				skil191 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil191.open(AudioSystem.getAudioInputStream(new File("music/gun03.wav")));
+				skil191.open(AudioSystem.getAudioInputStream(new File("resource/music/gun03.wav")));
 				skil192 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil192.open(AudioSystem.getAudioInputStream(new File("music/gun03.wav")));
+				skil192.open(AudioSystem.getAudioInputStream(new File("resource/music/gun03.wav")));
 				skil193 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil193.open(AudioSystem.getAudioInputStream(new File("music/gun03.wav")));
+				skil193.open(AudioSystem.getAudioInputStream(new File("resource/music/gun03.wav")));
 				skil194 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil194.open(AudioSystem.getAudioInputStream(new File("music/gun03.wav")));
+				skil194.open(AudioSystem.getAudioInputStream(new File("resource/music/gun03.wav")));
 			}
 
 			else if (skilNumber == 20) {
-				skil20 = ImageIO.read(new File("picture/midaregiri.png"));
+				skil20 = ImageIO.read(new File("resource/picture/midaregiri.png"));
 				skil201 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil201.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil201.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil202 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil202.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil202.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil203 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil203.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil203.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil204 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil204.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil204.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil205 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil205.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil205.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 
 			}
 
 			else if (skilNumber == 21) {
-				skil21 = ImageIO.read(new File("picture/hani1.png"));
+				skil21 = ImageIO.read(new File("resource/picture/hani1.png"));
 				skil211 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil211.open(AudioSystem.getAudioInputStream(new File("music/hani1.wav")));
+				skil211.open(AudioSystem.getAudioInputStream(new File("resource/music/hani1.wav")));
 
 			}
 
 			else if (skilNumber == 22) {
-				skil22 = ImageIO.read(new File("picture/hani2.png"));
+				skil22 = ImageIO.read(new File("resource/picture/hani2.png"));
 				skil221 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil221.open(AudioSystem.getAudioInputStream(new File("music/hani2.wav")));
+				skil221.open(AudioSystem.getAudioInputStream(new File("resource/music/hani2.wav")));
 
 			}
 
 			else if (skilNumber == 23) {
-				skil23 = ImageIO.read(new File("picture/hani3.png"));
+				skil23 = ImageIO.read(new File("resource/picture/hani3.png"));
 				skil231 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil231.open(AudioSystem.getAudioInputStream(new File("music/hani3.wav")));
+				skil231.open(AudioSystem.getAudioInputStream(new File("resource/music/hani3.wav")));
 
 			}
 
 			else if (skilNumber == 24) {
-				skil24 = ImageIO.read(new File("picture/hani4.png"));
+				skil24 = ImageIO.read(new File("resource/picture/hani4.png"));
 				skil241 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil241.open(AudioSystem.getAudioInputStream(new File("music/hani4.wav")));
+				skil241.open(AudioSystem.getAudioInputStream(new File("resource/music/hani4.wav")));
 
 			}
 
 			else if (skilNumber == 25) {
-				skil25 = ImageIO.read(new File("picture/hani5.png"));
+				skil25 = ImageIO.read(new File("resource/picture/hani5.png"));
 				skil251 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil251.open(AudioSystem.getAudioInputStream(new File("music/hani1.wav")));
+				skil251.open(AudioSystem.getAudioInputStream(new File("resource/music/hani1.wav")));
 
 			}
 
 			else if (skilNumber == 26) {
-				skil26 = ImageIO.read(new File("picture/bakuhatu1.png"));
+				skil26 = ImageIO.read(new File("resource/picture/bakuhatu1.png"));
 				skil261 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil261.open(AudioSystem.getAudioInputStream(new File("music/explosion01.wav")));
+				skil261.open(AudioSystem.getAudioInputStream(new File("resource/music/explosion01.wav")));
 
 			}
 
 			else if (skilNumber == 27) {
-				skil27 = ImageIO.read(new File("picture/rakurai.png"));
+				skil27 = ImageIO.read(new File("resource/picture/rakurai.png"));
 				skil271 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil271.open(AudioSystem.getAudioInputStream(new File("music/manykaminari.wav")));
+				skil271.open(AudioSystem.getAudioInputStream(new File("resource/music/manykaminari.wav")));
 
 			}
 
 			else if (skilNumber == 28) {
-				skil28 = ImageIO.read(new File("picture/kirimasuyo.png"));
+				skil28 = ImageIO.read(new File("resource/picture/kirimasuyo.png"));
 				skil281 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil281.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil281.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 
 			}
 
 			else if (skilNumber == 29) {
-				skil29 = ImageIO.read(new File("picture/sword1.png"));
+				skil29 = ImageIO.read(new File("resource/picture/sword1.png"));
 				skil291 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil291.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil291.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil292 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil292.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil292.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil293 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil293.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil293.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil294 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil294.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil294.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil295 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil295.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil295.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				magical29 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				magical29.open(AudioSystem.getAudioInputStream(new File("music/magical01.wav")));
+				magical29.open(AudioSystem.getAudioInputStream(new File("resource/music/magical01.wav")));
 
 			}
 
 			else if (skilNumber == 30) {
-				skil30 = ImageIO.read(new File("picture/sword2.png"));
+				skil30 = ImageIO.read(new File("resource/picture/sword2.png"));
 				skil301 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil301.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil301.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil302 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil302.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil302.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil303 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil303.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil303.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil304 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil304.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil304.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil305 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil305.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil305.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				magical30 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				magical30.open(AudioSystem.getAudioInputStream(new File("music/magical01.wav")));
+				magical30.open(AudioSystem.getAudioInputStream(new File("resource/music/magical01.wav")));
 
 			}
 
 			else if (skilNumber == 31) {
-				skil31 = ImageIO.read(new File("picture/sword3.png"));
+				skil31 = ImageIO.read(new File("resource/picture/sword3.png"));
 				skil311 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil311.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil311.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil312 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil312.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil312.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil313 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil313.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil313.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil314 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil314.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil314.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil315 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil315.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil315.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				magical31 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				magical31.open(AudioSystem.getAudioInputStream(new File("music/magical01.wav")));
+				magical31.open(AudioSystem.getAudioInputStream(new File("resource/music/magical01.wav")));
 
 			}
 
 			else if (skilNumber == 32) {
-				skil32 = ImageIO.read(new File("picture/sword4.png"));
+				skil32 = ImageIO.read(new File("resource/picture/sword4.png"));
 				skil321 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil321.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil321.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil322 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil322.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil322.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil323 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil323.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil323.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil324 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil324.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil324.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil325 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil325.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil325.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				magical32 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				magical32.open(AudioSystem.getAudioInputStream(new File("music/magical01.wav")));
+				magical32.open(AudioSystem.getAudioInputStream(new File("resource/music/magical01.wav")));
 
 			}
 
 			else if (skilNumber == 33) {
-				skil33 = ImageIO.read(new File("picture/sword5.png"));
+				skil33 = ImageIO.read(new File("resource/picture/sword5.png"));
 				skil331 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil331.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil331.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil332 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil332.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil332.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil333 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil333.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil333.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil334 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil334.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil334.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				skil335 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil335.open(AudioSystem.getAudioInputStream(new File("music/sword.wav")));
+				skil335.open(AudioSystem.getAudioInputStream(new File("resource/music/sword.wav")));
 				magical33 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				magical33.open(AudioSystem.getAudioInputStream(new File("music/magical01.wav")));
+				magical33.open(AudioSystem.getAudioInputStream(new File("resource/music/magical01.wav")));
 
 			}
 
 			else if (skilNumber == 34) {
-				skil34 = ImageIO.read(new File("picture/mochi1.png"));
+				skil34 = ImageIO.read(new File("resource/picture/mochi1.png"));
 				skil341 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil341.open(AudioSystem.getAudioInputStream(new File("music/fallmochi.wav")));
+				skil341.open(AudioSystem.getAudioInputStream(new File("resource/music/fallmochi.wav")));
 				skil342 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil342.open(AudioSystem.getAudioInputStream(new File("music/fallmochi1.wav")));
+				skil342.open(AudioSystem.getAudioInputStream(new File("resource/music/fallmochi1.wav")));
 
 			}
 
 			else if (skilNumber == 35) {
-				skil35 = ImageIO.read(new File("picture/mochi2.png"));
+				skil35 = ImageIO.read(new File("resource/picture/mochi2.png"));
 				skil351 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil351.open(AudioSystem.getAudioInputStream(new File("music/fallmochi.wav")));
+				skil351.open(AudioSystem.getAudioInputStream(new File("resource/music/fallmochi.wav")));
 				skil352 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil352.open(AudioSystem.getAudioInputStream(new File("music/fallmochi1.wav")));
+				skil352.open(AudioSystem.getAudioInputStream(new File("resource/music/fallmochi1.wav")));
 
 			}
 
 			else if (skilNumber == 36) {
-				skil36 = ImageIO.read(new File("picture/kusa1.png"));
+				skil36 = ImageIO.read(new File("resource/picture/kusa1.png"));
 				skil361 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil361.open(AudioSystem.getAudioInputStream(new File("music/kusahaeru.wav")));
+				skil361.open(AudioSystem.getAudioInputStream(new File("resource/music/kusahaeru.wav")));
 
 			}
 
 			else if (skilNumber == 37) {
-				skil37 = ImageIO.read(new File("picture/kusa2.png"));
+				skil37 = ImageIO.read(new File("resource/picture/kusa2.png"));
 				skil371 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil371.open(AudioSystem.getAudioInputStream(new File("music/kusahaeru.wav")));
+				skil371.open(AudioSystem.getAudioInputStream(new File("resource/music/kusahaeru.wav")));
 
 			}
 
 			else if (skilNumber == 38) {
-				skil38 = ImageIO.read(new File("picture/sippo1.png"));
+				skil38 = ImageIO.read(new File("resource/picture/sippo1.png"));
 				skil381 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil381.open(AudioSystem.getAudioInputStream(new File("music/binta.wav")));
+				skil381.open(AudioSystem.getAudioInputStream(new File("resource/music/binta.wav")));
 				skil382 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil382.open(AudioSystem.getAudioInputStream(new File("music/binta.wav")));
+				skil382.open(AudioSystem.getAudioInputStream(new File("resource/music/binta.wav")));
 
 			}
 
 			else if (skilNumber == 39) {
-				skil39 = ImageIO.read(new File("picture/moeteru.png"));
+				skil39 = ImageIO.read(new File("resource/picture/moeteru.png"));
 				skil391 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil391.open(AudioSystem.getAudioInputStream(new File("music/moeteru.wav")));
+				skil391.open(AudioSystem.getAudioInputStream(new File("resource/music/moeteru.wav")));
 
 			}
 
 			else if (skilNumber == 40) {
-				skil40 = ImageIO.read(new File("picture/iwa.png"));
+				skil40 = ImageIO.read(new File("resource/picture/iwa.png"));
 				skil401 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil401.open(AudioSystem.getAudioInputStream(new File("music/iwa.wav")));
+				skil401.open(AudioSystem.getAudioInputStream(new File("resource/music/iwa.wav")));
 
 			}
 
 			else if (skilNumber == 41) {
-				skil41 = ImageIO.read(new File("picture/koori.png"));
+				skil41 = ImageIO.read(new File("resource/picture/koori.png"));
 				skil411 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil411.open(AudioSystem.getAudioInputStream(new File("music/koori.wav")));
+				skil411.open(AudioSystem.getAudioInputStream(new File("resource/music/koori.wav")));
 
 			}
 
 			else if (skilNumber == 42) {
-				skil42 = ImageIO.read(new File("picture/onpu.png"));
+				skil42 = ImageIO.read(new File("resource/picture/onpu.png"));
 				skil421 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil421.open(AudioSystem.getAudioInputStream(new File("music/onpu1.wav")));
+				skil421.open(AudioSystem.getAudioInputStream(new File("resource/music/onpu1.wav")));
 
 			}
 
 			else if (skilNumber == 43) {
-				skil43 = ImageIO.read(new File("picture/onpu.png"));
+				skil43 = ImageIO.read(new File("resource/picture/onpu.png"));
 				skil431 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil431.open(AudioSystem.getAudioInputStream(new File("music/onpu2.wav")));
+				skil431.open(AudioSystem.getAudioInputStream(new File("resource/music/onpu2.wav")));
 
 			}
 
 			else if (skilNumber == 44) {
-				skil44 = ImageIO.read(new File("picture/onpu.png"));
+				skil44 = ImageIO.read(new File("resource/picture/onpu.png"));
 				skil441 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil441.open(AudioSystem.getAudioInputStream(new File("music/onpu3.wav")));
+				skil441.open(AudioSystem.getAudioInputStream(new File("resource/music/onpu3.wav")));
 
 			}
 
 			else if (skilNumber == 45) {
-				skil45 = ImageIO.read(new File("picture/sakura.png"));
+				skil45 = ImageIO.read(new File("resource/picture/sakura.png"));
 				skil451 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil451.open(AudioSystem.getAudioInputStream(new File("music/hana.wav")));
+				skil451.open(AudioSystem.getAudioInputStream(new File("resource/music/hana.wav")));
 
 			}
 
 			else if (skilNumber == 46) {
-				skil46 = ImageIO.read(new File("picture/nami.png"));
+				skil46 = ImageIO.read(new File("resource/picture/nami.png"));
 				skil461 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil461.open(AudioSystem.getAudioInputStream(new File("music/nami.wav")));
+				skil461.open(AudioSystem.getAudioInputStream(new File("resource/music/nami.wav")));
 
 			}
 
 			else if (skilNumber == 47) {
-				skil47 = ImageIO.read(new File("picture/yami.png"));
+				skil47 = ImageIO.read(new File("resource/picture/yami.png"));
 				skil471 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil471.open(AudioSystem.getAudioInputStream(new File("music/yami.wav")));
+				skil471.open(AudioSystem.getAudioInputStream(new File("resource/music/yami.wav")));
 
 			}
 
 			else if (skilNumber == 48) {
-				skil48 = ImageIO.read(new File("picture/bakuhatu.png"));
+				skil48 = ImageIO.read(new File("resource/picture/bakuhatu.png"));
 				skil481 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil481.open(AudioSystem.getAudioInputStream(new File("music/bakuhatu.wav")));
+				skil481.open(AudioSystem.getAudioInputStream(new File("resource/music/bakuhatu.wav")));
 
 			}
 
 			else if (skilNumber == 49) {
-				skil49 = ImageIO.read(new File("picture/kaze.png"));
+				skil49 = ImageIO.read(new File("resource/picture/kaze.png"));
 				skil491 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil491.open(AudioSystem.getAudioInputStream(new File("music/shippu.wav")));
+				skil491.open(AudioSystem.getAudioInputStream(new File("resource/music/shippu.wav")));
 
 			}
 
 			else if (skilNumber == 50) {
-				skil50 = ImageIO.read(new File("picture/lightburst.png"));
+				skil50 = ImageIO.read(new File("resource/picture/lightburst.png"));
 				skil501 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil501.open(AudioSystem.getAudioInputStream(new File("music/up2.wav")));
+				skil501.open(AudioSystem.getAudioInputStream(new File("resource/music/up2.wav")));
 
 			}
 
 			else if (skilNumber == 51) {
-				skil51 = ImageIO.read(new File("picture/lovelove.png"));
+				skil51 = ImageIO.read(new File("resource/picture/lovelove.png"));
 				skil511 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil511.open(AudioSystem.getAudioInputStream(new File("music/love1.wav")));
+				skil511.open(AudioSystem.getAudioInputStream(new File("resource/music/love1.wav")));
 				skil512 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil512.open(AudioSystem.getAudioInputStream(new File("music/love2.wav")));
+				skil512.open(AudioSystem.getAudioInputStream(new File("resource/music/love2.wav")));
 
 			}
 
 			else if (skilNumber == 52) {
-				skil52 = ImageIO.read(new File("picture/hoshihikari.png"));
+				skil52 = ImageIO.read(new File("resource/picture/hoshihikari.png"));
 				skil521 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil521.open(AudioSystem.getAudioInputStream(new File("music/sora.wav")));
+				skil521.open(AudioSystem.getAudioInputStream(new File("resource/music/sora.wav")));
 
 			}
 
 			else if (skilNumber == 53) {
-				skil53 = ImageIO.read(new File("picture/fireflower.png"));
+				skil53 = ImageIO.read(new File("resource/picture/fireflower.png"));
 				skil531 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil531.open(AudioSystem.getAudioInputStream(new File("music/firework.wav")));
+				skil531.open(AudioSystem.getAudioInputStream(new File("resource/music/firework.wav")));
 
 			}
 
 			else if (skilNumber == 54) {
-				skil54 = ImageIO.read(new File("picture/kaminari.png"));
+				skil54 = ImageIO.read(new File("resource/picture/kaminari.png"));
 				skil541 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil541.open(AudioSystem.getAudioInputStream(new File("music/kaminari.wav")));
+				skil541.open(AudioSystem.getAudioInputStream(new File("resource/music/kaminari.wav")));
 
 			}
 
 			else if (skilNumber == 55) {
-				skil55 = ImageIO.read(new File("picture/uzumaki.png"));
+				skil55 = ImageIO.read(new File("resource/picture/uzumaki.png"));
 				skil551 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil551.open(AudioSystem.getAudioInputStream(new File("music/water2.wav")));
+				skil551.open(AudioSystem.getAudioInputStream(new File("resource/music/water2.wav")));
 
 			}
 
 			else if (skilNumber == 56) {
-				skil56 = ImageIO.read(new File("picture/kazemodoki.png"));
+				skil56 = ImageIO.read(new File("resource/picture/kazemodoki.png"));
 				skil561 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil561.open(AudioSystem.getAudioInputStream(new File("music/wind.wav")));
+				skil561.open(AudioSystem.getAudioInputStream(new File("resource/music/wind.wav")));
 
 			}
 
 			else if (skilNumber == 57) {
-				skil57 = ImageIO.read(new File("picture/don.png"));
+				skil57 = ImageIO.read(new File("resource/picture/don.png"));
 				skil571 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil571.open(AudioSystem.getAudioInputStream(new File("music/don.wav")));
+				skil571.open(AudioSystem.getAudioInputStream(new File("resource/music/don.wav")));
 
 			}
 
 			else if (skilNumber == 58) {
-				skil58 = ImageIO.read(new File("picture/mahouzin.png"));
+				skil58 = ImageIO.read(new File("resource/picture/mahouzin.png"));
 				skil581 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil581.open(AudioSystem.getAudioInputStream(new File("music/mahouzin.wav")));
+				skil581.open(AudioSystem.getAudioInputStream(new File("resource/music/mahouzin.wav")));
 
 			}
 
 			else if (skilNumber == 59) {
-				skil59 = ImageIO.read(new File("picture/poison.png"));
+				skil59 = ImageIO.read(new File("resource/picture/poison.png"));
 				skil591 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil591.open(AudioSystem.getAudioInputStream(new File("music/dokudoku.wav")));
+				skil591.open(AudioSystem.getAudioInputStream(new File("resource/music/dokudoku.wav")));
 
 			}
 
 			else if (skilNumber == 60) {
-				skil60 = ImageIO.read(new File("picture/mesarero.png"));
+				skil60 = ImageIO.read(new File("resource/picture/mesarero.png"));
 				skil601 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil601.open(AudioSystem.getAudioInputStream(new File("music/kiero.wav")));
+				skil601.open(AudioSystem.getAudioInputStream(new File("resource/music/kiero.wav")));
 
 			}
 
 			else if (skilNumber == 61) {
-				skil61 = ImageIO.read(new File("picture/thundersword.png"));
+				skil61 = ImageIO.read(new File("resource/picture/thundersword.png"));
 				skil611 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil611.open(AudioSystem.getAudioInputStream(new File("music/yami2.wav")));
+				skil611.open(AudioSystem.getAudioInputStream(new File("resource/music/yami2.wav")));
 
 			}
 
 			else if (skilNumber == 62) {
-				skil62 = ImageIO.read(new File("picture/kama.png"));
+				skil62 = ImageIO.read(new File("resource/picture/kama.png"));
 				skil621 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil621.open(AudioSystem.getAudioInputStream(new File("music/swing3.wav")));
+				skil621.open(AudioSystem.getAudioInputStream(new File("resource/music/swing3.wav")));
 
 			}
 
 			else if (skilNumber == 63) {
-				skil63 = ImageIO.read(new File("picture/sugoibakuhatu.png"));
+				skil63 = ImageIO.read(new File("resource/picture/sugoibakuhatu.png"));
 				skil631 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil631.open(AudioSystem.getAudioInputStream(new File("music/magicwave3.wav")));
+				skil631.open(AudioSystem.getAudioInputStream(new File("resource/music/magicwave3.wav")));
 
 			}
 
 			else if (skilNumber == 64) {
-				skil64 = ImageIO.read(new File("picture/ice2.png"));
+				skil64 = ImageIO.read(new File("resource/picture/ice2.png"));
 				skil641 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil641.open(AudioSystem.getAudioInputStream(new File("music/ice2.wav")));
+				skil641.open(AudioSystem.getAudioInputStream(new File("resource/music/ice2.wav")));
 
 			}
 
 			else if (skilNumber == 65) {
-				skil65 = ImageIO.read(new File("picture/hunsui.png"));
+				skil65 = ImageIO.read(new File("resource/picture/hunsui.png"));
 				skil651 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil651.open(AudioSystem.getAudioInputStream(new File("music/watahuru.wav")));
+				skil651.open(AudioSystem.getAudioInputStream(new File("resource/music/watahuru.wav")));
 
 			}
 
 			else if (skilNumber == 66) {
-				skil66 = ImageIO.read(new File("picture/wat03.png"));
+				skil66 = ImageIO.read(new File("resource/picture/wat03.png"));
 				skil661 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil661.open(AudioSystem.getAudioInputStream(new File("music/pukupuku.wav")));
+				skil661.open(AudioSystem.getAudioInputStream(new File("resource/music/pukupuku.wav")));
 
 			}
 
 			else if (skilNumber == 67) {
-				skil67 = ImageIO.read(new File("picture/firetatumaki.png"));
+				skil67 = ImageIO.read(new File("resource/picture/firetatumaki.png"));
 				skil671 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil671.open(AudioSystem.getAudioInputStream(new File("music/firetatumaki.wav")));
+				skil671.open(AudioSystem.getAudioInputStream(new File("resource/music/firetatumaki.wav")));
 
 			}
 
 			else if (skilNumber == 68) {
-				skil68 = ImageIO.read(new File("picture/watertatumaki.png"));
+				skil68 = ImageIO.read(new File("resource/picture/watertatumaki.png"));
 				skil681 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil681.open(AudioSystem.getAudioInputStream(new File("music/watertatumaki.wav")));
+				skil681.open(AudioSystem.getAudioInputStream(new File("resource/music/watertatumaki.wav")));
 
 			}
 
 			else if (skilNumber == 69) {
-				skil69 = ImageIO.read(new File("picture/iwaagari.png"));
+				skil69 = ImageIO.read(new File("resource/picture/iwaagari.png"));
 				skil691 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil691.open(AudioSystem.getAudioInputStream(new File("music/iwaagari.wav")));
+				skil691.open(AudioSystem.getAudioInputStream(new File("resource/music/iwaagari.wav")));
 
 			}
 
 			else if (skilNumber == 70) {
-				skil70 = ImageIO.read(new File("picture/uzu.png"));
+				skil70 = ImageIO.read(new File("resource/picture/uzu.png"));
 				skil701 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil701.open(AudioSystem.getAudioInputStream(new File("music/ayasi.wav")));
+				skil701.open(AudioSystem.getAudioInputStream(new File("resource/music/ayasi.wav")));
 
 			}
 
 			else if (skilNumber == 71) {
-				skil71 = ImageIO.read(new File("picture/wind11.png"));
+				skil71 = ImageIO.read(new File("resource/picture/wind11.png"));
 				skil711 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil711.open(AudioSystem.getAudioInputStream(new File("music/wind.wav")));
+				skil711.open(AudioSystem.getAudioInputStream(new File("resource/music/wind.wav")));
 
 			}
 
 			else if (skilNumber == 72) {
-				skil72 = ImageIO.read(new File("picture/expro.png"));
+				skil72 = ImageIO.read(new File("resource/picture/expro.png"));
 				skil721 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil721.open(AudioSystem.getAudioInputStream(new File("music/attack2.wav")));
+				skil721.open(AudioSystem.getAudioInputStream(new File("resource/music/attack2.wav")));
 
 			}
 
 			else if (skilNumber == 73) {
-				skil73 = ImageIO.read(new File("picture/patye.png"));
+				skil73 = ImageIO.read(new File("resource/picture/patye.png"));
 				skil731 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil731.open(AudioSystem.getAudioInputStream(new File("music/beam.wav")));
+				skil731.open(AudioSystem.getAudioInputStream(new File("resource/music/beam.wav")));
 
 			}
 
 			else if (skilNumber == 74) {
-				skil74 = ImageIO.read(new File("picture/mizuawa.png"));
+				skil74 = ImageIO.read(new File("resource/picture/mizuawa.png"));
 				skil741 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil741.open(AudioSystem.getAudioInputStream(new File("music/water.wav")));
+				skil741.open(AudioSystem.getAudioInputStream(new File("resource/music/water.wav")));
 
 			}
 
 			else if (skilNumber == 75) {
-				skil75 = ImageIO.read(new File("picture/hit.png"));
+				skil75 = ImageIO.read(new File("resource/picture/hit.png"));
 				skil751 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil751.open(AudioSystem.getAudioInputStream(new File("music/chui.wav")));
+				skil751.open(AudioSystem.getAudioInputStream(new File("resource/music/chui.wav")));
 
 			}
 
 			else if (skilNumber == 76) {
-				skil76 = ImageIO.read(new File("picture/giruga.png"));
+				skil76 = ImageIO.read(new File("resource/picture/giruga.png"));
 				skil761 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil761.open(AudioSystem.getAudioInputStream(new File("music/explosion01.wav")));
+				skil761.open(AudioSystem.getAudioInputStream(new File("resource/music/explosion01.wav")));
 				skil762 = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-				skil762.open(AudioSystem.getAudioInputStream(new File("music/gun01.wav")));
+				skil762.open(AudioSystem.getAudioInputStream(new File("resource/music/gun01.wav")));
 
 			}
 
 			hpDown = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			hpDown.open(AudioSystem.getAudioInputStream(new File("music/fall.wav")));
+			hpDown.open(AudioSystem.getAudioInputStream(new File("resource/music/fall.wav")));
 
-			endButton = new ImageIcon("picture/skip.gif");
-			endButtonPic = ImageIO.read(new File("picture/skip.gif"));
+			endButton = new ImageIcon("resource/picture/skip.gif");
+			endButtonPic = ImageIO.read(new File("resource/picture/skip.gif"));
 
 		} catch (IOException e) {
 			throw new RuntimeException(e);

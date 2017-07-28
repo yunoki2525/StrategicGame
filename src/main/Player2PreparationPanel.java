@@ -52,16 +52,16 @@ public class Player2PreparationPanel extends JApplet implements ActionListener{
 		pane.setLayout(null);
 
 		try{
-			button1 = ImageIO.read(new File("ButtonImage/button1.png"));
+			button1 = ImageIO.read(new File("resource/ButtonImage/button1.png"));
 
-			backIcon = ImageIO.read(new File("Image/teitoku.png"));
+			backIcon = ImageIO.read(new File("resource/Image/teitoku.png"));
 
-			battleIcon = ImageIO.read(new File("ButtonImage/出撃アイコン3.png"));
-			statusIcon = ImageIO.read(new File("ButtonImage/ステータスアイコン1.png"));
-			shopIcon = ImageIO.read(new File("ButtonImage/ショップアイコン1.png"));
-			weaponIcon = ImageIO.read(new File("ButtonImage/出撃アイコン1.png"));
+			battleIcon = ImageIO.read(new File("resource/ButtonImage/出撃アイコン3.png"));
+			statusIcon = ImageIO.read(new File("resource/ButtonImage/ステータスアイコン1.png"));
+			shopIcon = ImageIO.read(new File("resource/ButtonImage/ショップアイコン1.png"));
+			weaponIcon = ImageIO.read(new File("resource/ButtonImage/出撃アイコン1.png"));
 
-			gostButtonIcon = new ImageIcon("ButtonImage/透明.png");
+			gostButtonIcon = new ImageIcon("resource/ButtonImage/透明.png");
 
 		}catch(IOException e){
 			throw new RuntimeException(e);
@@ -251,7 +251,7 @@ public class Player2PreparationPanel extends JApplet implements ActionListener{
 			Clip mapMusic = null ;
 			try{
 				/////// ここからPlayer1情報////////////
-				BufferedReader br = new BufferedReader(new FileReader("../src/PvP/P1unit"));
+				BufferedReader br = new BufferedReader(new FileReader("resource/PvP/P1unit"));
 				String str = br.readLine();
 				//	System.out.println(str);
 				int n0 = Integer.parseInt(str);
@@ -300,7 +300,7 @@ public class Player2PreparationPanel extends JApplet implements ActionListener{
 
 
 				/////// ここからPlayer2情報////////////
-				br = new BufferedReader(new FileReader("../src/PvP/P2unit"));
+				br = new BufferedReader(new FileReader("resource/PvP/P2unit"));
 				str = br.readLine();
 				int n2 = Integer.parseInt(str);
 				player2 = new Piece[n2];
@@ -339,12 +339,12 @@ public class Player2PreparationPanel extends JApplet implements ActionListener{
 				br.close();
 
 
-				br = new BufferedReader(new FileReader("../src/Field/"+field_name));
+				br = new BufferedReader(new FileReader("resource/Field/"+field_name));
 				str = br.readLine();
 				str = br.readLine();
 				try {
 					mapMusic = (Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-					mapMusic.open(AudioSystem.getAudioInputStream(new File("../bin/music/mapMusic/"+str+".wav")));
+					mapMusic.open(AudioSystem.getAudioInputStream(new File("resource/music/mapMusic/"+str+".wav")));
 				} catch (LineUnavailableException | UnsupportedAudioFileException e1) {
 					// TODO 自動生成された catch ブロック
 					e1.printStackTrace();

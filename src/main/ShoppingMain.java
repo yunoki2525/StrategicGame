@@ -84,7 +84,7 @@ public class ShoppingMain extends JApplet{
 
 		try{
 		music = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-		music.open(AudioSystem.getAudioInputStream(new File("music/shopping.wav")));
+		music.open(AudioSystem.getAudioInputStream(new File("resource/music/shopping.wav")));
 		}
 		catch (IOException e) {
 			throw new RuntimeException(e);
@@ -99,7 +99,7 @@ public class ShoppingMain extends JApplet{
 
 		try{
 
-			BufferedReader br = new BufferedReader(new FileReader("../src/Weapon/OwnWeapon"));
+			BufferedReader br = new BufferedReader(new FileReader("resource/Weapon/OwnWeapon"));
 			String str = br.readLine();
 			if(str != null){
 			String[] tokens1 = str.split(",");

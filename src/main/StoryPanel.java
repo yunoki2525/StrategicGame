@@ -77,31 +77,31 @@ public class StoryPanel extends JApplet implements ActionListener, KeyListener{
 
 	Container pane;
 
-	String[] PictureFile = {"","picture/hokkaidou.gif","picture/aomori.gif","picture/iwate.gif","picture/miyagi.gif",
-			"picture/akita.gif","picture/yamagata.gif","picture/hukusima.gif","picture/ibaragi.gif",
-			"picture/totigi.gif","picture/gunma.gif","picture/saitama.gif","picture/tiba.gif",
-			"picture/toukyou.gif","picture/kanagawa.gif","picture/niigata.gif","picture/toyama.gif",
-			"picture/isikawa.gif","picture/hukui.gif","picture/yamanasi.gif","picture/nagano.gif",
-			"picture/gihu.gif","picture/sizuoka.gif","picture/aiti.gif","picture/mie.gif",
-			"picture/siga.gif","picture/kyouto.gif","picture/oosaka.gif","picture/hyougo.gif",
-			"picture/nara.gif","picture/wakayama.gif","picture/tottori.gif","picture/simane.gif",
-			"picture/okayama.gif","picture/hirosima.gif","picture/yamaguti.gif","picture/tokusima.gif",
-			"picture/kagawa.gif","picture/ehime.gif","picture/kouti.gif","picture/hukuoka.gif",
-			"picture/saga.gif","picture/nagasaki.gif","picture/kumamoto.gif","picture/ooita.gif",
-			"picture/miyazaki.gif","picture/kagosima.gif","picture/okinawa.gif","picture/zero.png",
+	String[] PictureFile = {"","resource/picture/hokkaidou.gif","resource/picture/aomori.gif","resource/picture/iwate.gif","resource/picture/miyagi.gif",
+			"resource/picture/akita.gif","resource/picture/yamagata.gif","resource/picture/hukusima.gif","resource/picture/ibaragi.gif",
+			"resource/picture/totigi.gif","resource/picture/gunma.gif","resource/picture/saitama.gif","resource/picture/tiba.gif",
+			"resource/picture/toukyou.gif","resource/picture/kanagawa.gif","resource/picture/niigata.gif","resource/picture/toyama.gif",
+			"resource/picture/isikawa.gif","resource/picture/hukui.gif","resource/picture/yamanasi.gif","resource/picture/nagano.gif",
+			"resource/picture/gihu.gif","resource/picture/sizuoka.gif","resource/picture/aiti.gif","resource/picture/mie.gif",
+			"resource/picture/siga.gif","resource/picture/kyouto.gif","resource/picture/oosaka.gif","resource/picture/hyougo.gif",
+			"resource/picture/nara.gif","resource/picture/wakayama.gif","resource/picture/tottori.gif","resource/picture/simane.gif",
+			"resource/picture/okayama.gif","resource/picture/hirosima.gif","resource/picture/yamaguti.gif","resource/picture/tokusima.gif",
+			"resource/picture/kagawa.gif","resource/picture/ehime.gif","resource/picture/kouti.gif","resource/picture/hukuoka.gif",
+			"resource/picture/saga.gif","resource/picture/nagasaki.gif","resource/picture/kumamoto.gif","resource/picture/ooita.gif",
+			"resource/picture/miyazaki.gif","resource/picture/kagosima.gif","resource/picture/okinawa.gif","resource/picture/zero.png",
 	};
-	String[] FacePictureFile = {"","picture/hokkaidou2.gif","picture/aomori2.gif","picture/iwate2.gif","picture/miyagi2.gif",
-			"picture/akita2.gif","picture/yamagata2.gif","picture/hukusima2.gif","picture/ibaragi2.gif",
-			"picture/totigi2.gif","picture/gunma2.gif","picture/saitama2.gif","picture/tiba2.gif",
-			"picture/toukyou2.gif","picture/kanagawa2.gif","picture/niigata2.gif","picture/toyama2.gif",
-			"picture/isikawa2.gif","picture/hukui2.gif","picture/yamanasi2.gif","picture/nagano2.gif",
-			"picture/gihu2.gif","picture/sizuoka2.gif","picture/aiti2.gif","picture/mie2.gif",
-			"picture/siga2.gif","picture/kyouto2.gif","picture/oosaka2.gif","picture/hyougo2.gif",
-			"picture/nara2.gif","picture/wakayama2.gif","picture/tottori2.gif","picture/simane2.gif",
-			"picture/okayama2.gif","picture/hirosima2.gif","picture/yamaguti2.gif","picture/tokusima2.gif",
-			"picture/kagawa2.gif","picture/ehime2.gif","picture/kouti2.gif","picture/hukuoka2.gif",
-			"picture/saga2.gif","picture/nagasaki2.gif","picture/kumamoto2.gif","picture/ooita2.gif",
-			"picture/miyazaki2.gif","picture/kagosima2.gif","picture/okinawa2.gif","picture/zero.png",
+	String[] FacePictureFile = {"","resource/picture/hokkaidou2.gif","resource/picture/aomori2.gif","resource/picture/iwate2.gif","resource/picture/miyagi2.gif",
+			"resource/picture/akita2.gif","resource/picture/yamagata2.gif","resource/picture/hukusima2.gif","resource/picture/ibaragi2.gif",
+			"resource/picture/totigi2.gif","resource/picture/gunma2.gif","resource/picture/saitama2.gif","resource/picture/tiba2.gif",
+			"resource/picture/toukyou2.gif","resource/picture/kanagawa2.gif","resource/picture/niigata2.gif","resource/picture/toyama2.gif",
+			"resource/picture/isikawa2.gif","resource/picture/hukui2.gif","resource/picture/yamanasi2.gif","resource/picture/nagano2.gif",
+			"resource/picture/gihu2.gif","resource/picture/sizuoka2.gif","resource/picture/aiti2.gif","resource/picture/mie2.gif",
+			"resource/picture/siga2.gif","resource/picture/kyouto2.gif","resource/picture/oosaka2.gif","resource/picture/hyougo2.gif",
+			"resource/picture/nara2.gif","resource/picture/wakayama2.gif","resource/picture/tottori2.gif","resource/picture/simane2.gif",
+			"resource/picture/okayama2.gif","resource/picture/hirosima2.gif","resource/picture/yamaguti2.gif","resource/picture/tokusima2.gif",
+			"resource/picture/kagawa2.gif","resource/picture/ehime2.gif","resource/picture/kouti2.gif","resource/picture/hukuoka2.gif",
+			"resource/picture/saga2.gif","resource/picture/nagasaki2.gif","resource/picture/kumamoto2.gif","resource/picture/ooita2.gif",
+			"resource/picture/miyazaki2.gif","resource/picture/kagosima2.gif","resource/picture/okinawa2.gif","resource/picture/zero.png",
 	};
 	String[] TalkingMan = {"","北海道","青森","岩手","宮城","秋田","山形","福島","茨城","栃木","群馬","埼玉","千葉","東京",
 			"神奈川","新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知","三重","滋賀","京都",
@@ -242,15 +242,15 @@ public class StoryPanel extends JApplet implements ActionListener, KeyListener{
 			}
 
 
-			BackGraund = ImageIO.read(new File("picture/BackGraund"+storyBackNum+".jpg"));//＃
-			Waku1 = ImageIO.read(new File("picture/waku001.png"));
+			BackGraund = ImageIO.read(new File("resource/picture/BackGraund"+storyBackNum+".jpg"));//＃
+			Waku1 = ImageIO.read(new File("resource/picture/waku001.png"));
 
 			BackMusic = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			BackMusic.open(AudioSystem.getAudioInputStream(new File("music/healing.wav")));
+			BackMusic.open(AudioSystem.getAudioInputStream(new File("resource/music/healing.wav")));
 			yes = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			yes.open(AudioSystem.getAudioInputStream(new File("music/okok.wav")));
+			yes.open(AudioSystem.getAudioInputStream(new File("resource/music/okok.wav")));
 			no = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-			no.open(AudioSystem.getAudioInputStream(new File("music/nono.wav")));
+			no.open(AudioSystem.getAudioInputStream(new File("resource/music/nono.wav")));
 
 		} catch (IOException e) {
 			throw new RuntimeException(e);
@@ -465,8 +465,8 @@ public class StoryPanel extends JApplet implements ActionListener, KeyListener{
 						//////////////////
 						int get;
 						try{
-							BufferedReader br = new BufferedReader(new FileReader("../src/Money/Money1"));
-							//PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/Money/Money1")));
+							BufferedReader br = new BufferedReader(new FileReader("resource/Money/Money1"));
+							//PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/Money/Money1")));
 							String str = br.readLine();
 							System.out.println(str);
 							get = Integer.parseInt(str)+ prize[storyNum];
@@ -479,7 +479,7 @@ public class StoryPanel extends JApplet implements ActionListener, KeyListener{
 						}
 						
 						try{
-							PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/Money/Money1")));
+							PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/Money/Money1")));
 							pw.println(get);
 							pw.close();
 						}catch(IOException er){
@@ -492,7 +492,7 @@ public class StoryPanel extends JApplet implements ActionListener, KeyListener{
 					else{
 						int get;
 						try{
-							BufferedReader br = new BufferedReader(new FileReader("../src/Money/Money1"));
+							BufferedReader br = new BufferedReader(new FileReader("resource/Money/Money1"));
 							 get = Integer.parseInt(br.readLine())+ prize[storyNum];
 							
 
@@ -504,7 +504,7 @@ public class StoryPanel extends JApplet implements ActionListener, KeyListener{
 							throw new RuntimeException(er);
 						}
 						try{
-							PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/Money/Money1")));
+							PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/Money/Money1")));
 							pw.println(get);
 							pw.close();
 						}catch(IOException er){

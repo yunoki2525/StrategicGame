@@ -26,8 +26,8 @@ public class ShoppingPicture extends JApplet{
 
 		setPreferredSize(new Dimension(300,400));
 		try{
-			girl = ImageIO.read(new File("picture/chara000.png"));
-			back = ImageIO.read(new File("picture/card.jpeg"));
+			girl = ImageIO.read(new File("resource/picture/chara000.png"));
+			back = ImageIO.read(new File("resource/picture/card.jpeg"));
 
 		}
 		catch(IOException er){

@@ -40,7 +40,7 @@ public class BattleKeyManagement extends JApplet implements KeyListener {
 
 		try{
 			sound_effect = (Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-			sound_effect.open(AudioSystem.getAudioInputStream(new File("../bin/Sound/効果音/select04.wav")));
+			sound_effect.open(AudioSystem.getAudioInputStream(new File("resource/Sound/効果音/select04.wav")));
 			FloatControl control = (FloatControl)sound_effect.getControl(FloatControl.Type.MASTER_GAIN);
 			controlByLinearScalar(control, 1);
 

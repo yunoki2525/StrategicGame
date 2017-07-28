@@ -84,9 +84,9 @@ public class Player2WeaponSelectFrame extends JApplet implements ActionListener 
 
 		try{
 			ok=(Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-			ok.open(AudioSystem.getAudioInputStream(new File("music/okok.wav")));
+			ok.open(AudioSystem.getAudioInputStream(new File("resource/music/okok.wav")));
 			no=(Clip)AudioSystem.getLine(new Line.Info(Clip.class));
-			no.open(AudioSystem.getAudioInputStream(new File("music/nono.wav")));
+			no.open(AudioSystem.getAudioInputStream(new File("resource/music/nono.wav")));
 		}catch(IOException er){
 
 		}
@@ -167,7 +167,7 @@ public class Player2WeaponSelectFrame extends JApplet implements ActionListener 
 				try {
 					//					System.out.println("CSPnum = "+CSPnum);
 					//					System.out.println("weapon.id = "+weapon.id);
-					buki = ImageIO.read(new File("weapon/buki"+weapon.id+".jpg"));
+					buki = ImageIO.read(new File("resource/weapon/buki"+weapon.id+".jpg"));
 				} catch (IOException er) {
 					throw new RuntimeException(er);
 				}
@@ -309,8 +309,8 @@ public class Player2WeaponSelectFrame extends JApplet implements ActionListener 
 					System.out.println("決定");
 					try {
 						//P1unit2→	P1unit書き込み
-						BufferedReader br = new BufferedReader(new FileReader("../src/PvP/P1unit2"));
-						PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("../src/PvP/P1unit")));
+						BufferedReader br = new BufferedReader(new FileReader("resource/PvP/P1unit2"));
+						PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("resource/PvP/P1unit")));
 						pw.println(br.readLine());
 						for (int i = 0; i < unit_num; i++) {
 							pw.println(br.readLine());
@@ -356,7 +356,7 @@ public class Player2WeaponSelectFrame extends JApplet implements ActionListener 
 
 		try{
 			//みんなで使っている装備の数を知る
-			BufferedReader br4 = new BufferedReader(new FileReader("../src/PvP/P1unit"));
+			BufferedReader br4 = new BufferedReader(new FileReader("resource/PvP/P1unit"));
 			String str4 = br4.readLine();
 			unit_num = Integer.parseInt(str4);
 
@@ -370,7 +370,7 @@ public class Player2WeaponSelectFrame extends JApplet implements ActionListener 
 			}
 			br4.close();
 
-			BufferedReader br = new BufferedReader(new FileReader("../src/PvP/P1unit"));
+			BufferedReader br = new BufferedReader(new FileReader("resource/PvP/P1unit"));
 			String str = br.readLine();
 			unit_num = Integer.parseInt(str);
 			//	all_weapon_name = new String[unit_num];
@@ -389,8 +389,8 @@ public class Player2WeaponSelectFrame extends JApplet implements ActionListener 
 			br.close();
 
 			//P1unit→P1unit2書き込み
-			BufferedReader br2 = new BufferedReader(new FileReader("../src/PvP/P1unit"));
-			PrintWriter pw2 = new PrintWriter(new BufferedWriter(new FileWriter("../src/PvP/P1unit2")));
+			BufferedReader br2 = new BufferedReader(new FileReader("resource/PvP/P1unit"));
+			PrintWriter pw2 = new PrintWriter(new BufferedWriter(new FileWriter("resource/PvP/P1unit2")));
 			while(true){
 				str = br2.readLine();
 				if(str == null) break;
@@ -403,7 +403,7 @@ public class Player2WeaponSelectFrame extends JApplet implements ActionListener 
 			having_weapon = new int[Weapon.kind+1];
 			having_weapon[0] = 100;
 
-			BufferedReader br3 = new BufferedReader(new FileReader("../src/Weapon/Player1Weapon"));
+			BufferedReader br3 = new BufferedReader(new FileReader("resource/Weapon/Player1Weapon"));
 			String itemstr = br3.readLine();
 			if(itemstr != null){
 				String[] tokens1 = itemstr.split(",");

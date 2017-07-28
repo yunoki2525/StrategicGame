@@ -108,7 +108,7 @@ public class Player1ArmamentsPanel extends JApplet implements ActionListener{
 
 		try{
 		music = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
-		music.open(AudioSystem.getAudioInputStream(new File("music/shopping.wav")));
+		music.open(AudioSystem.getAudioInputStream(new File("resource/music/shopping.wav")));
 		}
 		catch (IOException e) {
 			throw new RuntimeException(e);
@@ -122,7 +122,7 @@ public class Player1ArmamentsPanel extends JApplet implements ActionListener{
 		up.passItem(item_con.items[0]);
 
 		try{
-			BufferedReader br = new BufferedReader(new FileReader("../src/Weapon/Player1Weapon"));
+			BufferedReader br = new BufferedReader(new FileReader("resource/Weapon/Player1Weapon"));
 			String read = br.readLine();
 			if(read != null){
 			String[] tokens1 = read.split(",");

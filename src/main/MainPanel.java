@@ -9,6 +9,7 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JPanel;
+import main.Piece;
 
 public class MainPanel extends JPanel implements Runnable {
 	AppletContext ac; // アプレットのコンテキスト
