@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BattleAI implements Runnable {
 
 	BattlePanel panel;
-	
+
 	float[][] environment ;
 	int[][] threat;
 	int[][] threat_;
@@ -177,7 +177,7 @@ public class BattleAI implements Runnable {
 						System.out.println("2-2:yes(skill)");
 						System.out.println("2-3:SPが重い技が当たるか？(skill)");
 						System.out.println("2-3:yes(skill)");
-						
+
 						for(int i=0;i<attackable.length;i++){
 							System.out.println("attackable : " +Arrays.toString(attackable[i]));
 						}
@@ -861,7 +861,7 @@ public class BattleAI implements Runnable {
 
 	}
 
-	public int[] calcCursorPosi(int idx , int skillidx, int[] now_posi){		
+	public int[] calcCursorPosi(int idx , int skillidx, int[] now_posi){
 		System.out.println("calcCursorPosi");
 		int max_unit_attack=0;
 		int unit_attack=0;
@@ -975,7 +975,7 @@ public class BattleAI implements Runnable {
 					enemyDirection(enemy[idx].position,enemy[hpDownidx].position);
 					makeSupportableMap(idx,hpDownidx,i);
 					//if(enemy[idx].unit.skill[i].support&&enemyCanMoveSupport(idx)&&enemy[idx].SP>=enemy[idx].unit.skill[i].cost){
-					
+
 					if(enemy[idx].unit.skill[i].support&&enemyCanSupport(idx)&&enemy[idx].SP>=enemy[idx].unit.skill[i].cost){
 						System.out.println("1-2:yes(skill)");
 						//first_motion = move;
@@ -987,7 +987,7 @@ public class BattleAI implements Runnable {
 						second_motion = wait;
 						acting = false;
 					}
-					
+
 
 				}
 			}
@@ -1008,7 +1008,7 @@ public class BattleAI implements Runnable {
 						second_motion = wait;
 						acting = false;
 					}
-					
+
 
 				}
 			}
