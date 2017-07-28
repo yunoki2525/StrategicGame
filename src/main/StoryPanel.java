@@ -186,13 +186,13 @@ public class StoryPanel extends JApplet implements ActionListener, KeyListener{
 
 		if(next_panel == 0){
 
-			//br = new BufferedReader(new FileReader("../story/end"+0+".txt"));
+			//br = new BufferedReader(new FileReader("resource/story/end"+0+".txt"));
 			//this.storyNum = 0;
 			//endFlag = true;
-			br = new BufferedReader(new FileReader("../story/story"+storyNum+".txt"));
+			br = new BufferedReader(new FileReader("resource/story/story"+storyNum+".txt"));
 			endFlag = false;
 		}else{
-			br = new BufferedReader(new FileReader("../story/end"+storyNum+".txt"));
+			br = new BufferedReader(new FileReader("resource/story/end"+storyNum+".txt"));
 			endFlag = true;
 		}
 		String str = br.readLine();
